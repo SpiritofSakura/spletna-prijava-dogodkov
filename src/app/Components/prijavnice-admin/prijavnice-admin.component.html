@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <header [ngStyle]="{ 'background-color': backgroundColor }">
+        <div class="logo">
+            <img>
+        </div>
+        <div class="menu">
+            <div class="menu-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/prijavnice_admin']">Čakajoči</div>
+              <div class="menu-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/arhiv']">Arhiv</div>
+              <div class="menu-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/termin']">Termin +</div>
+              <div class="menu-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/promotor']">Promotor+</div>
+            <div class="menu-item logout" (click) = "logout()">Odjava</div>
+        </div>
+    </header>
+    <main>
+        <div class="table-container">
+            <table>
+              <tbody>
+                <tr *ngFor="let item of podatki" (click) = "prikaziObrazec(item)">
+                  <td>{{ item.ime_sole }}</td>
+                  <td>{{ item.datum }}</td>
+                  <td>{{ item.sola }}</td>
+                  <td>{{ item.izvedba }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </main>
+      
+</div>

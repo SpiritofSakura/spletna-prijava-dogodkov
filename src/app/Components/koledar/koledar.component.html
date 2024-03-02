@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <header [ngStyle]="{ 'background-color': backgroundColor }">
+        <div class="logo">
+            <img>
+        </div>
+        <div class="menu">
+            <div class="menu-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/prijavnice']">Čakajoči</div>
+              <div class="menu-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/koledar']">Koledar</div>
+            <div class="menu-item logout">Odjava</div>
+        </div>
+    </header>
+    <main>
+        <div >
+        </div>
+      </main>
+      
+</div>

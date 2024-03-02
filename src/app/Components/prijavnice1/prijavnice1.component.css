@@ -1,0 +1,212 @@
+*{
+  box-sizing: border-box;
+}
+.ozadje {
+  background-color: blue;
+  height: 100vh;
+  width: 100vw;
+  overflow:hidden;
+}
+
+.container {
+  background-color: white;
+  
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 50px;
+  height: 580px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+.basic-info,
+.student-info{
+  flex: 1 1 33.33%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.submit-info{
+  flex: 1 1 33.33%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.visit-info {
+  flex: 1 1 33.33%;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.basic-info label,
+.student-info label,
+.visit-info label,
+.submit-info label {
+  display: block;
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.basic-info .content,
+.student-info .content,
+.visit-info .content {
+  padding: 20px;
+}
+
+.basic-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.student-info .info-left {
+  padding:20px;
+  float: left;
+  width: 50%;
+}
+
+.student-info .info-right {
+  padding:20px;
+  float: right;
+  width: 50%;
+}
+
+.student-info p {
+  margin: 5px 0;
+}
+
+.visit-info select {
+  font-size: 1rem;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.visit-info select:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.visit-info select:active {
+  transform: scale(0.9);
+}
+
+.visit-info .content-right {
+  float: right;
+  width: 50%;
+}
+
+.visit-info .content-left{
+  
+  float:left;
+  width: 50%;
+}
+
+.buttons{
+  float:right;
+}
+
+
+.invite{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width:100px;
+  margin-right: 300px;
+  padding:20px;
+
+}
+
+
+.invite select {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.invite select:hover {
+  transform: scale(1.05);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  padding:20px;
+  
+}
+
+.buttons button{
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.accept {
+  background-color: rgb(10, 191, 10);
+  color: white;
+  margin-left: 20px;
+  padding: 0.5rem;
+  ;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.accept:hover {
+  transform: scale(1.05);
+}
+
+.accept:active {
+  transform: scale(0.95);
+}
+
+.deny {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.deny:hover {
+  transform: scale(1.05);
+}
+
+.deny:active {
+  transform: scale(0.95);
+}

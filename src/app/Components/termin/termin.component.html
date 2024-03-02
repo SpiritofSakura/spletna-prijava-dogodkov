@@ -1,0 +1,31 @@
+<div class="wrapper">
+    <header [ngStyle]="{ 'background-color': backgroundColor }">
+        <div class="logo">
+            <img>
+        </div>
+        <div class="menu">
+            <div class="menu-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/prijavnice_admin']">Čakajoči</div>
+              <div class="menu-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/arhiv']">Arhiv</div>
+              <div class="menu-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/termin']">Termin +</div>
+              <div class="menu-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/promotor']">Promotor+</div>
+            <div class="menu-item logout">Odjava</div>
+        </div>
+    </header>
+    <main>
+      <div class="form-wrapper">
+        <form #promotorForm="ngForm" [ngStyle]="{ 'background-color': backgroundColor }"(ngSubmit)="dodaj(promotorForm)">
+          <div class="form-group">
+            <label for="datePicker">Izberi datum</label>
+            <mat-form-field>
+              <input matInput [matDatepicker]="picker" id="datePicker" name="datum" [(ngModel)]="datum" required (dateChange)="onDateChange($event)">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div *ngIf="isSubmitted && !promotorForm.valid" class="alert alert-danger">Prosim vnesite vse podatke! </div>
+          <button type="submit" class="btn-submit">Dodaj</button>
+          <!-- rest of the form -->
+        </form>
+      </div>
+    </main>
+</div>

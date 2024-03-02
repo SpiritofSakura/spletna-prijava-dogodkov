@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.menu-item {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    border-radius: 30px;
+    color: #007bff;
+}
+
+.logout {
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.menu-item.active {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    border-radius: 30px;
+    color: #007bff;
+}
+
+
+/* CSS */
+.table-container {
+    margin: 0 40px; /* add left and right margin */
+    max-width: calc(100% - 40px);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* add 10px of spacing between rows */
+  }
+  
+  table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  table tr:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  table tr:active {
+    background-color: #dc3545;
+    color: #fff;
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  table tr td:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  table tr td:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+
+
+
+  

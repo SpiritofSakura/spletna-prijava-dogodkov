@@ -1,0 +1,19 @@
+
+<div class="login-container" [ngStyle]="{ 'background-color': backgroundColor }">
+    <form (submit)="login()">
+      <div class="form-group">
+        <h1>Prijava</h1>
+        <input type="text"   placeholder="Uporabniško ime" name="username" class="form-control" [(ngModel)] = "username">
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Geslo" class="form-control" name="password" [(ngModel)]="password" >
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-login" [ngStyle]="{ 'background-color': backgroundColor }">Prijavi se</button>
+      </div>
+      <div class="form-group">
+        <a href="#" class="forgot-password"></a>
+      </div>
+    </form>
+  </div>
+  

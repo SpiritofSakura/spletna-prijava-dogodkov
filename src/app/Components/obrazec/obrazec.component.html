@@ -1,0 +1,50 @@
+<div class="ozadje" [ngStyle]="{ 'background-color': backgroundColor }">
+    <div class="container">
+        <div class="basic-info">
+          <label [ngStyle]="{ 'background-color': backgroundColor }">Osnovni podatki</label>
+          <div class="content">
+            <h2>Ime šole: {{data.ime_sole}}</h2>
+            <p>Naslov: {{data.naslov}}</p>
+          </div>
+        </div>
+  
+        <div class="student-info">
+          <label [ngStyle]="{ 'background-color': backgroundColor }">Podatki o obisku</label>
+          <div class="content">
+            <div class="info-left">
+              <p>Razred/i: {{data.starostna_skupina}}</p>
+              <p>Število učencev: {{data.st_ucencev}}</p>
+              <p>Šola/e: {{data.sola}}</p>
+            </div>
+            <div class="info-right">
+              <p>Izvedba: {{data.izvedba}}</p>
+              <p>Sredstva: {{data.sredstva}}</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="visit-info">
+          <label [ngStyle]="{ 'background-color': backgroundColor }">Termin in Kontakt</label>
+          <div class = "content">
+          <div class="content-left">
+            <p>Datum obiska: {{data.datum}}</p>
+            <p>Čas: {{data.ura}}</p>
+            <p>Ime: {{data.ime}}</p>
+            <p>Priimek: {{data.priimek}}</p>
+            </div>
+            <div class="content-right">
+                <p>Opis: {{data.opis}}</p>
+                <p>Sporočilo: {{data.sporocilo}}</p>
+                <p>Epošta: {{data.eposta}}</p>
+                <p>Telefon: {{data.telefon}}</p>
+            </div>
+        </div>
+        </div>
+          <div class="buttons">
+            <button class="accept" (click) = "sprejmi()">Sprejmi</button>
+            <button class="deny" (click) = "zavrni()">Zavrni</button>
+          </div>
+    </div>
+
+    
+  
